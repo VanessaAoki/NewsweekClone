@@ -1,0 +1,29 @@
+/* COLOR REFERENCE
+
+orange: rgb(247, 34, 16)
+
+title gray: rgb(3, 3, 3, 0.4)
+
+dark gray: rgb(85, 85, 85)
+
+button yellow: rgb(255, 228, 0)
+
+*/
+
+/* FONT REFERENCE
+
+Most of the articles use "Liberation sans":
+
+    <link rel="stylesheet" href="https://use.typekit.net/pjb3esl.css">
+
+    font-family: liberation-sans, sans-serif; 
+
+Most of the titles use "Roboto Condensed":
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+
+    font-family: 'Roboto Condensed', sans-serif;
+
+ */
