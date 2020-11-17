@@ -1,0 +1,60 @@
+/* COLOR REFERENCE
+
+orange: rgb(247, 34, 16)
+
+title gray: rgba(3, 3, 3, .4)
+
+dark gray: rgb(85, 85, 85)
+
+darker gray: rgb(51, 51, 51)
+
+tags background: rgba(255, 255, 255, .9);
+
+button yellow: rgb(255, 228, 0)
+
+*/
+
+/* FONT REFERENCE
+
+Most of the articles use "Liberation sans":
+
+    <link rel="stylesheet" href="https://use.typekit.net/pjb3esl.css">
+
+    font-family: liberation-sans, sans-serif; 
+
+Most of the titles use "Roboto Condensed":
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+
+    font-family: 'Roboto Condensed', sans-serif;
+
+ */
+
+ /* FONT AWESOME 
+
+    <script src="https://kit.fontawesome.com/0348c0adc9.js" crossorigin="anonymous"></script>
+
+    menu:
+    <i class="fas fa-bars"></i>
+
+    search:
+    <i class="fas fa-search"></i>
+
+    facebook:
+    <i class="fab fa-facebook-square"></i>
+
+    twitter:
+    <i class="fab fa-twitter"></i>
+
+    instagram:
+    <i class="fab fa-instagram"></i>
+
+    tumblr:
+    <i class="fab fa-tumblr"></i>
+
+    linkedin:
+    <i class="fab fa-linkedin-in"></i>
+
+ */
