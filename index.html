@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Newsweek clone</title>
+    <link rel="stylesheet" href="./assets/css/style.css" class="css">
     <link rel="stylesheet" href="https://use.typekit.net/pjb3esl.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
@@ -11,19 +12,122 @@
 </head>
 <body>
     <header class="row">
-        <nav class="navbar navbar-nav d-flex flex-row justify-content-between">
-
+        <nav class="navbar navbar-expand-md navbar-nav d-flex flex-row justify-content-between bg-dark">
+            <div class="navbar-brand">
+                <img src="./assets/imgs/logo.png" alt="Newsweek">
+            </div>
+            <div class="d-flex flex-row">
+                <div class="text-uppercase"></div>
+                <button type="button" class="btn btn-warning text-uppercase">subscribe</button>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#Hamburguer" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="Hamburguer">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">World</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Business</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Tech & Science</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Culture</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Newsgeek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Health</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">The Debate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Vantage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Weather</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
         <nav class="navbar navbar-nav d-flex flex-row">
-
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">US</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">World</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Tech & Science</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Culture</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Newsgeek</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Health</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">The Debate</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Vantage</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Weather</a>
+                </li>
+                <li class="nav-item">
+                    <i class="fas fa-search"></i>
+                    <input type="search" name="search" id="search">
+                </li>
+            </ul>
         </nav>
         <nav class="navbar navbar-nav d-flex flex-row justify-content-start">
-
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase">trending</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase">joe biden</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase">donald trump</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase">2020 election</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase">coronavirus</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase">stimulus package</a>
+                </li>
+            </ul>
         </nav>
     </header>
     <section class="row">
         <div class="container-fluid">
-
+            
         </div>
         <div class="row">
 
@@ -49,5 +153,7 @@
         </footer>
     </section>
     <script src="https://kit.fontawesome.com/0348c0adc9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
 </html>
