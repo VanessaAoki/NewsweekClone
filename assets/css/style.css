@@ -75,3 +75,29 @@ body {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
+/* @media screen and (max-width:768px) {
+    .navbar-collapse {
+        display: none;
+    }
+} */
+
+@media screen and (max-width: 767px) {
+    header > .tobe-hiden {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 523px) and (min-width: 320px) {
+    header > nav > div > .login {
+        display: none;
+    }
+    header > nav > div > .subscribe {
+        border-radius: 20px;
+        border: none;
+        width: 90%;
+    }
+    nav > .navbar-brand > img {
+        height: 50px;
+    }
+}
