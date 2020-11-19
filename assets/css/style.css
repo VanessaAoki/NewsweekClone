@@ -56,9 +56,14 @@ body {
 
 .imgs .first {
     position: absolute;
-    right: 200px;
-    top: 20px;
-    z-index: -1;
+    left: -10px;
+    top: -10px;
+    z-index:0;
+}
+
+.imgs .second {
+    position: relative;
+    z-index: 2;
 }
 
 .subscribe-btn {
