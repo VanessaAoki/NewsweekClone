@@ -9,20 +9,18 @@ body {
     background-color: white !important;
 }
 
-.bg-orange {
-    background-color: rgb(247, 34, 16)!IMPORTANT;
-}
+.bg-orange {background-color: rgb(247, 34, 16) !important;}
 
-.text-orange {color:  rgb(247, 34, 16)!IMPORTANT;}
+.bg-light-gray {background-color: rgba(219, 218, 218, 0.849) !important;}
+
+.text-orange {color: rgb(247, 34, 16) !important;}
 
 .text-decor-orange {
     text-decoration: solid;
-    text-decoration-color: rgb(247, 34, 16)!IMPORTANT;
+    text-decoration-color: rgb(247, 34, 16) !important;
 }
 
-.border-bottom-1 {
-    border-bottom: 15px solid rgb(199, 199, 199);
-}
+.border-bottom-1 {border-bottom: 15px solid rgb(199, 199, 199);}
 
 .image > img {
     width: 100%;
@@ -51,15 +49,6 @@ body {
     width: 60px;
 }
 
-.in-the-mag >  img {
-    width: 100%;
-    margin-top: -50px;
-    margin-bottom: 50px;
-}
-
-.in-the-mag > a > img {
-    overflow: hidden;
-}
 
 .imgs img {
     width: 150px;
