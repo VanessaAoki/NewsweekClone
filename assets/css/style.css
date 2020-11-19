@@ -20,6 +20,10 @@ body {
     text-decoration-color: rgb(247, 34, 16)!IMPORTANT;
 }
 
+.border-bottom-1 {
+    border-bottom: 15px solid rgb(199, 199, 199);
+}
+
 .image > img {
     width: 100%;
 }

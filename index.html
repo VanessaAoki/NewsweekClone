@@ -12,7 +12,7 @@
 </head>
 <body class="container-fluid">
     <div class="main container-fluid">
-    <header class="border-bottom">
+    <header>
         <nav class="row navbar navbar-expand-sm navbar-nav d-flex flex-row justify-content-between bg-orange">
             <div class="navbar-brand pl-4">
                 <img src="./assets/imgs/logo.png" alt="Newsweek" style="filter: grayscale(100%) invert(100%) contrast(10); width: 236px; height: 35px;">
@@ -64,9 +64,9 @@
             </div>
         </nav>
         <nav class="row">
-            <ul class="navbar-nav navbar-expand-sm h5 font-weight-bolder pl-4 my-3">
+            <ul class="navbar-nav container-fluid navbar-expand-sm h5 font-weight-bolder my-3 pb-2 border-bottom">
                 <li class="nav-item">
-                    <a href="#" class="nav-link border-right text-dark py-0 px-3">US</a>
+                    <a href="#" class="nav-link border-right text-dark py-0 px-3">U.S.</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link border-right text-dark py-0 px-3">World</a>
@@ -99,13 +99,13 @@
                     <a href="#" class="nav-link text-dark py-0 px-3">Weather</a>
                 </li>
                 <li class="nav-item position-relative">
-                    <i class="position-absolute mt-0 ml-5 pl-5 fas fa-search text-secondary"></i>
-                    <input class=" border-0 pt-0 ml-2" placeholder="Search" type="search" name="search" id="search">
+                    <i class="position-absolute pt-1 fas fa-search text-secondary"></i>
+                    <input class="text-small border-0 pb-1 pl-4 ml-0" placeholder="Search" type="search" name="search" id="search" style="width: 110px;">
                 </li>
             </ul>
         </nav>
-        <nav class="row">
-            <ul class="navbar-nav navbar-expand-sm h5 font-weight-bolder pl-5 my-3">
+        <nav class="row border-bottom">
+            <ul class="navbar-nav navbar-expand-sm h5 border-bottom-1 container-fluid font-weight-bolder pl-4 pb-2 mb-1">
                 <li class="nav-item">
                     <a href="#" class="nav-link text-uppercase text-dark py-0 px-3">trending</a>
                 </li>
