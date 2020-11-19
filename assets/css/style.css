@@ -20,11 +20,6 @@ body {
     text-decoration-color: rgb(247, 34, 16) !important;
 }
 
-.position-sticky {
-    position: sticky;
-    top:0 !important;
-}
-
 .border-bottom-1 {border-bottom: 15px solid rgb(199, 199, 199);}
 
 .image > img {
@@ -76,19 +71,25 @@ body {
     margin-bottom: 20px;
 }
 
-/* @media screen and (max-width:768px) {
-    .navbar-collapse {
-        display: none;
+@media screen and (min-width:768px) {
+    .position-sticky {
+        position: sticky;
+        top:0 !important;
     }
-} */
+    
+}
 
 @media screen and (max-width: 767px) {
+    body {max-width: 767px;}
+
     header > .tobe-hiden {
         display: none;
     }
 }
 
 @media screen and (max-width: 523px) and (min-width: 320px) {
+    .main {max-width: 523px;}
+
     header > nav > div > .login {
         display: none;
     }
