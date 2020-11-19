@@ -11,3 +11,14 @@
     margin: 10px;
 }
 
+.turn {
+    width: 100%;
+}
+
+.turn .turn-elmt {
+    margin: 5px;
+}
+
+.turn img {
+    width: 100%;
+}
