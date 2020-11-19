@@ -22,3 +22,9 @@
 .turn img {
     width: 100%;
 }
+
+.py-4 img,
+.opinion > img {
+    height: 60px;
+    width: 60px;
+}
