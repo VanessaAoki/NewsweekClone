@@ -1,5 +1,23 @@
+body {
+    width: 100%;
+    background-color: #5083b6;
+}
+
+.main {
+    max-width: 1410px;
+    margin: 0 auto;
+    background-color: white !important;
+}
+
 .bg-orange {
     background-color: rgb(247, 34, 16)!IMPORTANT;
+}
+
+.text-orange {color:  rgb(247, 34, 16)!IMPORTANT;}
+
+.text-decor-orange {
+    text-decoration: solid;
+    text-decoration-color: rgb(247, 34, 16)!IMPORTANT;
 }
 
 .image > img {
