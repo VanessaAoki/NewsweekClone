@@ -46,3 +46,28 @@ body {
     height: 60px;
     width: 60px;
 }
+
+.in-the-mag >  img {
+    width: 100%;
+    margin-top: -50px;
+    margin-bottom: 50px;
+}
+
+.in-the-mag > a > img {
+    overflow: hidden;
+}
+
+.imgs img {
+    width: 150px;
+}
+
+.imgs .second {
+    position: absolute;
+    left: 100px;
+    top: 20px;
+}
+
+.subscribe-btn {
+    width: 30%;
+    margin-top: 20px;
+}
