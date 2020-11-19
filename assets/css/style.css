@@ -71,3 +71,9 @@ body {
     width: 30%;
     margin-top: 20px;
 }
+
+.newsletter .btn {
+    width: 85%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
