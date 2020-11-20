@@ -1,6 +1,6 @@
 html,
 body {
-    width: 100%;
+    width: 100vw;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -27,11 +27,8 @@ h5,
 
 .border-bottom-1 {border-bottom: 15px solid rgb(199, 199, 199);}
 
-
 header > nav > div > .subscribe {
     border-radius: 20px;
-    border: none;
-    width: 90%;
 }
 
 .image > img {
@@ -110,8 +107,10 @@ header > nav > div > .subscribe {
     }
 }
 
-@media screen and (max-width: 544px) and (min-width: 320px) {
-    .main {max-width: 544px;}
+@media screen and (max-width: 544px) {
+    body {width: 100%;}
+
+    .main {width: 100%;}
 
     h6,
     .h6 {font-size: 0.9rem !important;}

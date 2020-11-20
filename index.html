@@ -10,25 +10,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 </head>
-<body class="container-fluid">
+<body class="container container-md-fluid">
     <div class="main container-fluid">
 
     <!-- HEADER -->
 
     <header>
-        <nav class="row navbar navbar-expand-sm navbar-nav d-flex flex-row justify-content-between bg-orange fixed-top px-5">
+        <nav class="row navbar navbar-expand navbar-nav d-flex flex-row col-12 justify-content-around pr-5 pl-4 justify-content-md-between bg-orange px-md-5 fixed-top">
             <div class="navbar-brand">
                 <img src="./assets/imgs/logo.png" alt="Newsweek" style="filter: grayscale(100%) invert(100%) contrast(10); width: 131px; height: 20px;">
             </div>
             <div class="d-flex flex-row align-items-center justify-content-between">
                 <h5 class="text-uppercase font-weight-bold text-white px-4 my-0 login">login</h5>
-                <div class="text-uppercase"></div>
-                <button type="button" class="btn btn-warning text-uppercase font-weight-bold my-0 subscribe">subscribe ></button>
-                <button class="navbar-toggler text-left" data-toggle="collapse" data-target="#Hamburguer" type="button">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <a href="#">
-                    <i class="ml-4 mt-2 align-self-center h3 text-light fas fa-bars"></i>
+                    <i class="d-sm-block text-light mr-3 mt-2 h4 d-md-none fas fa-user" style="filter: opacity(80%);"></i>
+                </a>
+                <button type="button" class="btn btn-warning text-uppercase font-weight-bold my-0 pt-0 subscribe" style="height: 25px;">subscribe ></button>
+                <a href="#">
+                    <i class="ml-3 mr-3 mr-md-0 ml-md-4 mt-2 align-self-center h3 text-light fas fa-bars" style="filter: opacity(80%);"></i>
                 </a>
             </div>
         </nav>
@@ -794,12 +793,12 @@
 
     <!-- BOTTOM ARTICLES -->
 
-    <section class="row border-top pt-4">
-        <div class="title h4 font-weight-bold text-orange">
+    <section class="row border-top pt-4 col-12">
+        <div class="title h4 pl-3 font-weight-bold text-orange">
             U.S.
         </div>
-        <div class="row">
-            <article class="col-4 bottom-art d-flex flex-column">
+        <div class="row d-flex flex-column flex-md-row container-fluid">
+            <article class="col-12 col-md-4 bottom-art d-flex flex-column">
                 <img src="./assets/imgs/minks.webp" alt="Mink">
                 <p class="sub-title mt-3">
                     <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
@@ -807,7 +806,7 @@
                     </a>
                 </p>
             </article>
-            <article class="col-4 bottom-art d-flex flex-column">
+            <article class="col-12 col-md-4 bottom-art d-flex flex-column">
                 <img src="./assets/imgs/minks.webp" alt="Mink">
                 <p class="sub-title mt-3">
                     <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
@@ -815,151 +814,22 @@
                     </a>
                 </p>
             </article>          
-            <section class="col-4 p-0">
-                <article class="media pb-3">
+            <section class="col-12 col-md-4">
+                <article class="media pb-2 pb-md-1">
                     <img src="./assets/imgs/right-small.webp" alt="Bald Eagle" class="m-0">
-                    <a href="#" class="pt-1 pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
-                        Severed Feet of Bald Eagles Found in Minnesota, With Talons Removed
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Severed Feet of Bald Eagles Found
                     </a>
                 </article>
-                <article class="media border-top py-3">
+                <article class="media border-top py-2 pt-md-2">
                     <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
-                    <a href="#" class="pt-1 pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
                         Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
                     </a>
                 </article>
-                <article class="media border-top py-3">
+                <article class="media border-top py-2 pt-md-2">
                     <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
-                    <a href="#" class="pt-1 pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
-                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
-                    </a>
-                </article>
-            </section>
-        </div>
-    </section>
-    <section class="row border-top pt-4">
-        <div class="title h4 font-weight-bold text-orange">
-            U.S.
-        </div>
-        <div class="row">
-            <article class="col-4 bottom-art d-flex flex-column">
-                <img src="./assets/imgs/minks.webp" alt="Mink">
-                <p class="sub-title mt-3">
-                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
-                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
-                    </a>
-                </p>
-            </article>
-            <article class="col-4 bottom-art d-flex flex-column">
-                <img src="./assets/imgs/minks.webp" alt="Mink">
-                <p class="sub-title mt-3">
-                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
-                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
-                    </a>
-                </p>
-            </article>          
-            <section class="col-4 p-0">
-                <article class="media pb-3">
-                    <img src="./assets/imgs/right-small.webp" alt="Bald Eagle" class="m-0">
-                    <a href="#" class="pt-1 pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
-                        Severed Feet of Bald Eagles Found in Minnesota, With Talons Removed
-                    </a>
-                </article>
-                <article class="media border-top py-3">
-                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
-                    <a href="#" class="pt-1 pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
-                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
-                    </a>
-                </article>
-                <article class="media border-top py-3">
-                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
-                    <a href="#" class="pt-1 pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
-                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
-                    </a>
-                </article>
-            </section>
-        </div>
-    </section>
-    <section class="row border-top pt-4">
-        <div class="title h4 font-weight-bold text-orange">
-            U.S.
-        </div>
-        <div class="row">
-            <article class="col-4 bottom-art d-flex flex-column">
-                <img src="./assets/imgs/minks.webp" alt="Mink">
-                <p class="sub-title mt-3">
-                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
-                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
-                    </a>
-                </p>
-            </article>
-            <article class="col-4 bottom-art d-flex flex-column">
-                <img src="./assets/imgs/minks.webp" alt="Mink">
-                <p class="sub-title mt-3">
-                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
-                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
-                    </a>
-                </p>
-            </article>          
-            <section class="col-4 p-0">
-                <article class="media pb-3">
-                    <img src="./assets/imgs/right-small.webp" alt="Bald Eagle" class="m-0">
-                    <a href="#" class="pt-1 pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
-                        Severed Feet of Bald Eagles Found in Minnesota, With Talons Removed
-                    </a>
-                </article>
-                <article class="media border-top py-3">
-                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
-                    <a href="#" class="pt-1 pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
-                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
-                    </a>
-                </article>
-                <article class="media border-top py-3">
-                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
-                    <a href="#" class="pt-1 pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
-                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
-                    </a>
-                </article>
-            </section>
-        </div>
-    </section>
-    <section class="row border-top pt-4">
-        <div class="title h4 font-weight-bold text-orange">
-            U.S.
-        </div>
-        <div class="row">
-            <article class="col-4 bottom-art d-flex flex-column">
-                <img src="./assets/imgs/minks.webp" alt="Mink">
-                <p class="sub-title mt-3">
-                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
-                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
-                    </a>
-                </p>
-            </article>
-            <article class="col-4 bottom-art d-flex flex-column">
-                <img src="./assets/imgs/minks.webp" alt="Mink">
-                <p class="sub-title mt-3">
-                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
-                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
-                    </a>
-                </p>
-            </article>          
-            <section class="col-4 p-0">
-                <article class="media pb-3">
-                    <img src="./assets/imgs/right-small.webp" alt="Bald Eagle" class="m-0">
-                    <a href="#" class="pt-1 pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
-                        Severed Feet of Bald Eagles Found in Minnesota, With Talons Removed
-                    </a>
-                </article>
-                <article class="media border-top py-3">
-                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
-                    <a href="#" class="pt-1 pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
-                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
-                    </a>
-                </article>
-                <article class="media border-top py-3">
-                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
-                    <a href="#" class="pt-1 pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
                         Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
                     </a>
                 </article>
@@ -994,10 +864,10 @@
 
         <!-- NEWSLETTER -->
 
-        <div class="col-lg-4 newsletter">
-            <h5 class="font-weight-bold pt-3 pl-2 text-orange">NEWSLETTER</h5>
-            <div class="row border d-flex flex-column flex-md-row ml-2 text-center text-lg-left">
-                <img src="./assets/imgs/newsletter.png" alt="news letters" class="col-md-6 pl-0">
+        <div class="col-lg-4 newsletter container">
+            <h5 class="font-weight-bold pt-3 pl-md-2 ml-0 text-orange">NEWSLETTER</h5>
+            <div class="row border d-flex flex-column flex-md-row mx-0 ml-md-2 text-center text-lg-left">
+                <img src="./assets/imgs/newsletter.png" alt="news letters" class="col-md-6 px-0">
                 <div class="col-md-6 align-items-center">
                     <h2 class="h5 font-weight-bold text-black mt-4 mb-3">The Starting 5</h2>
                     <p class="newsletter-description">See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
