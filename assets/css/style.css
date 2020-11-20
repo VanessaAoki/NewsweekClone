@@ -1,6 +1,7 @@
+html,
 body {
     width: 100%;
-    background-color: #5083b6;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .main {
@@ -8,6 +9,11 @@ body {
     margin: 0 auto;
     background-color: white !important;
 }
+
+h4,
+.h4,
+h5,
+.h5 {font-family: liberation-sans, sans-serif;}
 
 .bg-orange {background-color: rgb(247, 34, 16) !important;}
 
@@ -22,6 +28,13 @@ body {
 
 .border-bottom-1 {border-bottom: 15px solid rgb(199, 199, 199);}
 
+
+header > nav > div > .subscribe {
+    border-radius: 20px;
+    border: none;
+    width: 90%;
+}
+
 .image > img {
     width: 100%;
 }
@@ -29,10 +42,6 @@ body {
 .media > img {
     width: 80px;
     margin: 10px;
-}
-
-.turn {
-    width: 100%;
 }
 
 .turn .turn-elmt {
@@ -56,13 +65,12 @@ body {
 
 .imgs .first {
     position: absolute;
-    left: -10px;
     top: -10px;
     z-index:0;
 }
 
 .imgs .second {
-    position: relative;
+    float: right;
     z-index: 2;
 }
 
@@ -78,32 +86,40 @@ body {
 }
 
 @media screen and (min-width:768px) {
-    .position-sticky {
+    .position-sticky-lg {
         position: sticky;
         top:0 !important;
     }
     
 }
 
-@media screen and (max-width: 767px) {
-    body {max-width: 767px;}
+@media screen and (max-width: 768px) {
+    body {max-width: 768px;}
+
+    h5,
+    .h5 {font-size: 1rem !important;}
+    h4,
+    .h4 {font-size: 1.25rem !important;}
+    p {font-size: 0.80rem !important;}
 
     header > .tobe-hiden {
         display: none;
     }
 }
 
-@media screen and (max-width: 523px) and (min-width: 320px) {
-    .main {max-width: 523px;}
+@media screen and (max-width: 544px) and (min-width: 320px) {
+    .main {max-width: 544px;}
+
+    h5,
+    .h5 {font-size: 1rem !important;}
+    h4,
+    .h4 {font-size: 1.25rem !important;}
+    p {font-size: 0.80rem !important;}
 
     header > nav > div > .login {
         display: none;
     }
-    header > nav > div > .subscribe {
-        border-radius: 20px;
-        border: none;
-        width: 90%;
-    }
+
     nav > .navbar-brand > img {
         height: 50px;
     }
