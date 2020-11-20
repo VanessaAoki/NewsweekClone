@@ -22,7 +22,6 @@ h5,
 .text-orange {color: rgb(247, 34, 16) !important;}
 
 .text-decor-orange {
-    text-decoration: solid;
     text-decoration-color: rgb(247, 34, 16) !important;
 }
 
@@ -70,7 +69,6 @@ header > nav > div > .subscribe {
 }
 
 .imgs .second {
-    float: right;
     z-index: 2;
 }
 
@@ -86,9 +84,9 @@ header > nav > div > .subscribe {
 }
 
 @media screen and (min-width:768px) {
-    .position-sticky-lg {
+    .position-sticky {
         position: sticky;
-        top:0 !important;
+        top:60px !important;
     }
     
 }
@@ -96,11 +94,16 @@ header > nav > div > .subscribe {
 @media screen and (max-width: 768px) {
     body {max-width: 768px;}
 
+    h6,
+    .h6 {font-size: 0.9rem !important;}
     h5,
     .h5 {font-size: 1rem !important;}
     h4,
     .h4 {font-size: 1.25rem !important;}
-    p {font-size: 0.80rem !important;}
+    h3,
+    .h3 {font-size: 1.5rem !important;}
+    p,
+    .p {font-size: 0.80rem !important;}
 
     header > .tobe-hiden {
         display: none;
@@ -110,11 +113,16 @@ header > nav > div > .subscribe {
 @media screen and (max-width: 544px) and (min-width: 320px) {
     .main {max-width: 544px;}
 
+    h6,
+    .h6 {font-size: 0.9rem !important;}
     h5,
     .h5 {font-size: 1rem !important;}
     h4,
-    .h4 {font-size: 1.25rem !important;}
-    p {font-size: 0.80rem !important;}
+    .h4 {font-size: 1.15rem !important;}
+    h3,
+    .h3 {font-size: 1.25rem !important;}
+    p,
+    .p {font-size: 0.80rem !important;}
 
     header > nav > div > .login {
         display: none;
