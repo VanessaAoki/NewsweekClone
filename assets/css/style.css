@@ -87,6 +87,14 @@ header > nav > div > .subscribe {
 @media screen and (max-width: 768px) {
   body { max-width: 768px; }
 
+  header > .tobe-hiden {
+    display: none;
+  }
+
+  header > nav > .tobe-hiden {
+    display: none;
+  }
+
   h6,
   .h6 { font-size: 0.9rem !important; }
 
@@ -101,10 +109,6 @@ header > nav > div > .subscribe {
 
   p,
   .p { font-size: 0.8rem !important; }
-
-  header > .tobe-hiden {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 544px) {
