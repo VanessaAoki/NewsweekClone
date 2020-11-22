@@ -1,6 +1,5 @@
 html,
 body {
-  width: 100vw;
   font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -8,6 +7,11 @@ body {
   max-width: 1410px;
   margin: 0 auto;
   background-color: white !important;
+}
+
+.main-section > .tric > div {
+  height: 0.1px;
+  background-color: red;
 }
 
 h4,
@@ -86,6 +90,11 @@ header > nav > div > .subscribe {
 
 @media screen and (max-width: 768px) {
   body { max-width: 768px; }
+
+  .main-section > .tric > div {
+    height: 800px;
+    background-color: red;
+  }
 
   header > .tobe-hiden {
     display: none;
