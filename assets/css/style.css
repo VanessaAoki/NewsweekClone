@@ -111,6 +111,8 @@ header > nav > div > .subscribe {
   .p { font-size: 0.8rem !important; }
 }
 
+/* ------------------ For the smallest screens -------------------- */
+
 @media screen and (max-width: 544px) {
   body { width: 100%; }
 
