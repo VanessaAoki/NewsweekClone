@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsweek clone</title>
+    <link rel="stylesheet" href="./assets/css/style.css" class="css">
+    <link rel="stylesheet" href="https://use.typekit.net/pjb3esl.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+<body class="container-fluid">
+    <div class="main container-fluid">
+
+    <!-- HEADER -->
+
+    <header class="mx-0 px-0">
+        <nav class="row navbar navbar-expand navbar-nav d-flex col-12 justify-content-between justify-content-md-between bg-orange px-md-5 fixed-top mx-0">
+            <div class="tobe-hiden">
+                <p class="text-light mt-2"><b>30° Kin, DRC ></b><br/>Fri, Nov 20, 2020</p>
+            </div>
+            <div class="navbar-brand ml-5 ml-md-1 pt-0 pt-md-1">
+                <img src="./assets/imgs/logo.png" alt="Newsweek" style="filter: grayscale(100%) invert(100%) contrast(10); width: 131px; height: 20px;">
+            </div>
+            <div class="d-flex flex-row align-items-center justify-content-between">
+                <h5 class="text-uppercase font-weight-bold text-white px-4 my-0 login">login</h5>
+                <a href="#">
+                    <i class="d-sm-block text-light mr-3 mt-2 h4 d-md-none fas fa-user" style="filter: opacity(80%);"></i>
+                </a>
+                <button type="button" class="btn btn-warning text-uppercase font-weight-bold my-0 pt-0 px-2 subscribe" style="height: 25px;">subscribe></button>
+                <a href="#">
+                    <i class="ml-3 mr-3 mr-md-0 ml-md-4 mt-2 h3 text-light fas fa-bars" style="filter: opacity(80%);"></i>
+                </a>
+            </div>
+        </nav>
+        <nav class="row tobe-hiden d-none d-lg-block mt-5 pt-2">
+            <ul class="navbar-nav container-fluid navbar-expand-sm h6 font-weight-bolder mt-5 mb-2 pb-0 border-bottom d-flex flex-wrap">
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-dark py-0 px-3">U.S.</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-dark py-0 px-3">World</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-dark py-0 px-3">Business</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-dark py-0 px-3">Tech & Science</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-dark py-0 px-3">Culture</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-dark py-0 px-3">Newsgeek</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-dark py-0 px-3">Sports</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-dark py-0 px-3">Health</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-dark py-0 px-3">The Debate</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-dark py-0 px-3">Vantage</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-dark py-0 px-3">Weather</a>
+                </li>
+                <li class="nav-item position-relative">
+                    <i class="position-absolute pt-1 fas fa-search text-secondary"></i>
+                    <input class="text-small border-0 pb-1 pl-4 ml-0" placeholder="Search" type="search" name="search" id="search" style="width: 110px;">
+                </li>
+            </ul>
+        </nav>
+        <nav class="row tobe-hiden border-bottom d-none d-lg-block">
+            <ul class="navbar-nav navbar-expand-sm h6 border-bottom container-fluid font-weight-bolder pl-4 pb-2 mb-1 d-flex flex-lg-wrap">
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase text-dark py-0 px-2">trending</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase text-black-50 py-0 px-2">joe biden</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase text-black-50 py-0 px-2">donald trump</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase text-black-50 py-0 px-2">2020 election</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase text-black-50 py-0 px-2">coronavirus</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-uppercase text-black-50 py-0 px-2">stimulus package</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN SECTION -->
+
+    <section class="row main-section mt-md-2">
+        <div class="mt-3" style="height: 60px;"></div>
+        <div class="container-fluid d-flex flex-md-row flex-md-wrap flex-column mt-4 p-0">
+
+        <!-- FEATURED STORIES -->
+        
+                <div class="col-xl col-md-5 col-12 d-flex flex-column"> 
+                    <div class="position-sticky">
+                        <div class="h5 text-uppercase font-weight-bold text-black-50 sub-section-title py-2">
+                            FEATURED STORIES
+                        </div>
+                        <article class="d-flex flex-column">
+                            <div class="image position-relative d-flex">
+                                <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+                                    POLITICS
+                                </p>
+                                <img src="./assets/imgs/biden.webp" alt="President" />
+                            </div>
+                            <a href="#" class="h4 font-weight-bold text-dark sub-title pt-4 pb-2">
+                                Voters' Demands for Biden's First 100 Days: Tackle COVID, Boost the Economy
+                            </a>
+                            <p class="text-left text-dark description">
+                                The Democrat is set to take office during a period of turmoil caused by the COVID-19 pandemic and its impact on the economy.
+                            </p>
+                        </article>
+                        <article class="d-flex flex-column">
+                            <div class="image position-relative d-flex">
+                                <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+                                    POLITCS
+                                </p>
+                                <img src="./assets/imgs/biden.webp" alt="President" />
+                            </div>
+                            <a href="#" class="h4 font-weight-bold text-dark sub-title pt-4 pb-2">
+                                Voters' Demands for Biden's First 100 Days: Tackle COVID, Boost the Economy
+                            </a>
+                            <p class="text-left text-dark description">
+                                The Democrat is set to take office during a period of turmoil caused by the COVID-19 pandemic and its impact on the economy.
+                            </p>
+                        </article>
+                        <article class="d-flex flex-column">
+                            <div class="image position-relative d-flex">
+                                <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+                                    POLITCS
+                                </p>
+                                <img src="./assets/imgs/biden.webp" alt="President" />
+                            </div>
+                            <a href="#" class="h4 font-weight-bold text-dark sub-title pt-4 pb-2">
+                                Voters' Demands for Biden's First 100 Days: Tackle COVID, Boost the Economy
+                            </a>
+                            <p class="text-left text-dark description">
+                                The Democrat is set to take office during a period of turmoil caused by the COVID-19 pandemic and its impact on the economy.
+                            </p>
+                        </article>
+                        <article class="d-flex flex-column">
+                            <div class="image position-relative d-flex">
+                                <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+                                    POLITCS
+                                </p>
+                                <img src="./assets/imgs/biden.webp" alt="President" />
+                            </div>
+                            <a href="#" class="h4 font-weight-bold text-dark sub-title pt-4 pb-2">
+                                Voters' Demands for Biden's First 100 Days: Tackle COVID, Boost the Economy
+                            </a>
+                            <p class="text-left text-dark description">
+                                The Democrat is set to take office during a period of turmoil caused by the COVID-19 pandemic and its impact on the economy.
+                            </p>
+                        </article>
+                        <article class="d-flex flex-column">
+                            <div class="image position-relative d-flex">
+                                <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+                                    POLITCS
+                                </p>
+                                <img src="./assets/imgs/biden.webp" alt="President" />
+                            </div>
+                            <a href="#" class="h4 font-weight-bold text-dark sub-title pt-4 pb-2">
+                                Voters' Demands for Biden's First 100 Days: Tackle COVID, Boost the Economy
+                            </a>
+                            <p class="text-dark description">
+                                The Democrat is set to take office during a period of turmoil caused by the COVID-19 pandemic and its impact on the economy.
+                            </p>
+                        </article>
+                    </div>
+                </div>
+
+        <!-- TOP STORY -->
+
+                <div class="col-xl col-md-7 col-12 top-story">
+                    <div class="h5 text-uppercase font-weight-bold text-black-50 sub-section-title py-2">
+                        TOP STORY
+                    </div>
+                    <article class="d-flex flex-column">
+                        <div class="image position-relative d-flex">
+                            <p class=" position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2 categorie">
+                                U.S.
+                            </p>
+                            <img src="./assets/imgs/top-story.webp" alt="Stimulus Check" />   
+                        </div>
+                        <a href="#" class="h4 font-weight-bold text-dark sub-title pt-4 pb-2">
+                            2020 Stimulus Check Deadline for Missed CARES Act Payments Looms
+                        </a>
+                        <p class="text-dark description">
+                            Around 160 million direct payments have been made after the CARES Act was signed, though there are still eligible people yet to register for funds.
+                        </p>
+                    </article>
+
+            <!-- MY TURN + CULTURE & TRAVEL -->
+                <div class="myTurn-culture">
+                <!-- MY TURN -->
+
+                    <section class="row d-flex flex-column turn">
+                        <div class="sub-section-title h5 text-uppercase font-weight-bold text-black-50 sub-section-title py-2">
+                            MY TURN
+                        </div>
+                        <div class="d-flex flex-column flex-md-row">
+                            <div class="d-flex flex-column turn-elmt">
+                                <img src="./assets/imgs/my-turn.jpg" alt="Plant Stylist">
+                                <a href="#" class="sub-title font-weight-bold text-black-50 py-3">
+                                    'I'm a Plant Stylist. Here Are 4 Tips to Make a More Peaceful Home'
+                                </a>
+                            </div>
+                            <div class="d-flex flex-column turn-elmt">
+                                <img src="./assets/imgs/my-turn.jpg" alt="Plant Stylist">
+                                <a href="#" class="sub-title font-weight-bold text-black-50 py-3">
+                                    'I'm a Plant Stylist. Here Are 4 Tips to Make a More Peaceful Home'
+                                </a>
+                            </div>
+                            <div class="d-flex flex-column turn-elmt">
+                                <img src="./assets/imgs/my-turn.jpg" alt="Plant Stylist">
+                                <a href="#" class="sub-title font-weight-bold text-black-50 py-3">
+                                    'I'm a Plant Stylist. Here Are 4 Tips to Make a More Peaceful Home'
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </section>
+
+                <!-- CULTURE & TRAVEL -->
+
+                    <section class="row d-flex flex-column turn">
+                        <div class="sub-section-title h5 text-uppercase font-weight-bold text-black-50 sub-section-title py-2">
+                            CULTURE & TRAVEL
+                        </div>
+                        <div class="d-flex flex-column flex-md-row">
+                            <div class="d-flex flex-column turn-elmt">
+                                <img src="./assets/imgs/travel.webp" alt="Plant Stylist">
+                                <p class="sub-title font-weight-bold text-black-50 py-3">
+                                    'Earth at Night in Color' Reveals the Nocturnal Lives of Animals 
+                                </p>
+                            </div>
+                            <div class="d-flex flex-column turn-elmt">
+                                <img src="./assets/imgs/travel.webp" alt="Plant Stylist">
+                                <p class="sub-title font-weight-bold text-black-50 py-3">
+                                    'Earth at Night in Color' Reveals the Nocturnal Lives of Animals 
+                                </p>
+                            </div>
+                            <div class="d-flex flex-column turn-elmt">
+                                <img src="./assets/imgs/travel.webp" alt="Plant Stylist">
+                                <p class="sub-title font-weight-bold text-black-50 py-3">
+                                    'Earth at Night in Color' Reveals the Nocturnal Lives of Animals 
+                                </p>
+                            </div>                       
+                        </div>
+                    </section>
+                </div>
+            <!-- MORE STORIES -->
+
+                        <div class="sub-section-title h5 text-uppercase font-weight-bold text-black-50 sub-section-title py-2">
+                            MORE STORIES
+                        </div>
+                        <section class="d-flex flex-column">                        
+                            <article class="col-12 container-fluid border-top pt-3 px-0">
+                                <img class="float-left col-4 pl-0 mb-1" src="./assets/imgs/my-turn.jpg" alt="Mitch McConnell">
+                                <div class="media-body">
+                                    <a href="#" class="h5 font-weight-bold text-dark">
+                                        Pelosi Condemns Trump Firing Official Who Refuted Fraud Claims
+                                    </a>
+                                    <p class="text-secondary pt-2">
+                                        The president fired Christopher Krebs, director of the Cybersecurity and Infrastructure Security Agency, who rejected claims of election fraud.
+                                    </p>
+                                </div>
+                            </article>   
+                            <article class="col-12 container-fluid border-top pt-3 px-0">
+                                <img class="float-left col-4 pl-0 mb-1" src="./assets/imgs/my-turn.jpg" alt="Mitch McConnell">
+                                <div class="media-body">
+                                    <a href="#" class="h5 font-weight-bold text-dark">
+                                        Pelosi Condemns Trump Firing Official Who Refuted Fraud Claims
+                                    </a>
+                                    <p class="text-secondary pt-2">
+                                        The president fired Christopher Krebs, director of the Cybersecurity and Infrastructure Security Agency, who rejected claims of election fraud.
+                                    </p>
+                                </div>
+                            </article>     
+                            <article class="col-12 container-fluid border-top pt-3 px-0">
+                                <img class="float-left col-4 pl-0 mb-1" src="./assets/imgs/my-turn.jpg" alt="Mitch McConnell">
+                                <div class="media-body">
+                                    <a href="#" class="h5 font-weight-bold text-dark">
+                                        Pelosi Condemns Trump Firing Official Who Refuted Fraud Claims
+                                    </a>
+                                    <p class="text-secondary pt-2">
+                                        The president fired Christopher Krebs, director of the Cybersecurity and Infrastructure Security Agency, who rejected claims of election fraud.
+                                    </p>
+                                </div>
+                            </article>     
+                            <article class="col-12 container-fluid border-top pt-3 px-0">
+                                <img class="float-left col-4 pl-0 mb-1" src="./assets/imgs/my-turn.jpg" alt="Mitch McConnell">
+                                <div class="media-body">
+                                    <a href="#" class="h5 font-weight-bold text-dark">
+                                        Pelosi Condemns Trump Firing Official Who Refuted Fraud Claims
+                                    </a>
+                                    <p class="text-secondary pt-2">
+                                        The president fired Christopher Krebs, director of the Cybersecurity and Infrastructure Security Agency, who rejected claims of election fraud.
+                                    </p>
+                                </div>
+                            </article>     
+                            <article class="col-12 container-fluid border-top pt-3 px-0">
+                                <img class="float-left col-4 pl-0 mb-1" src="./assets/imgs/my-turn.jpg" alt="Mitch McConnell">
+                                <div class="media-body">
+                                    <a href="#" class="h5 font-weight-bold text-dark">
+                                        Pelosi Condemns Trump Firing Official Who Refuted Fraud Claims
+                                    </a>
+                                    <p class="text-secondary pt-2">
+                                        The president fired Christopher Krebs, director of the Cybersecurity and Infrastructure Security Agency, who rejected claims of election fraud.
+                                    </p>
+                                </div>
+                            </article>     
+                            <article class="col-12 container-fluid border-top pt-3 px-0">
+                                <img class="float-left col-4 pl-0 mb-1" src="./assets/imgs/my-turn.jpg" alt="Mitch McConnell">
+                                <div class="media-body">
+                                    <a href="#" class="h5 font-weight-bold text-dark">
+                                        Pelosi Condemns Trump Firing Official Who Refuted Fraud Claims
+                                    </a>
+                                    <p class="text-secondary pt-2">
+                                        The president fired Christopher Krebs, director of the Cybersecurity and Infrastructure Security Agency, who rejected claims of election fraud.
+                                    </p>
+                                </div>
+                            </article>     
+                            <article class="col-12 container-fluid border-top pt-3 px-0">
+                                <img class="float-left col-4 pl-0 mb-1" src="./assets/imgs/my-turn.jpg" alt="Mitch McConnell">
+                                <div class="media-body">
+                                    <a href="#" class="h5 font-weight-bold text-dark">
+                                        Pelosi Condemns Trump Firing Official Who Refuted Fraud Claims
+                                    </a>
+                                    <p class="text-secondary pt-2">
+                                        The president fired Christopher Krebs, director of the Cybersecurity and Infrastructure Security Agency, who rejected claims of election fraud.
+                                    </p>
+                                </div>
+                            </article>     
+                            <article class="col-12 container-fluid border-top pt-3 px-0">
+                                <img class="float-left col-4 pl-0 mb-1" src="./assets/imgs/my-turn.jpg" alt="Mitch McConnell">
+                                <div class="media-body">
+                                    <a href="#" class="h5 font-weight-bold text-dark">
+                                        Pelosi Condemns Trump Firing Official Who Refuted Fraud Claims
+                                    </a>
+                                    <p class="text-secondary pt-2">
+                                        The president fired Christopher Krebs, director of the Cybersecurity and Infrastructure Security Agency, who rejected claims of election fraud.
+                                    </p>
+                                </div>
+                            </article>     
+                            <article class="col-12 container-fluid border-top pt-3 px-0">
+                                <img class="float-left col-4 pl-0 mb-1" src="./assets/imgs/my-turn.jpg" alt="Mitch McConnell">
+                                <div class="media-body">
+                                    <a href="#" class="h5 font-weight-bold text-dark">
+                                        Pelosi Condemns Trump Firing Official Who Refuted Fraud Claims
+                                    </a>
+                                    <p class="text-secondary pt-2">
+                                        The president fired Christopher Krebs, director of the Cybersecurity and Infrastructure Security Agency, who rejected claims of election fraud.
+                                    </p>
+                                </div>
+                            </article>     
+                            <article class="col-12 container-fluid border-top pt-3 px-0">
+                                <img class="float-left col-4 pl-0 mb-1" src="./assets/imgs/my-turn.jpg" alt="Mitch McConnell">
+                                <div class="media-body">
+                                    <a href="#" class="h5 font-weight-bold text-dark">
+                                        Pelosi Condemns Trump Firing Official Who Refuted Fraud Claims
+                                    </a>
+                                    <p class="text-secondary pt-2">
+                                        The president fired Christopher Krebs, director of the Cybersecurity and Infrastructure Security Agency, who rejected claims of election fraud.
+                                    </p>
+                                </div>
+                            </article>     
+                            <article class="col-12 container-fluid border-top pt-3 px-0">
+                                <img class="float-left col-4 pl-0 mb-1" src="./assets/imgs/my-turn.jpg" alt="Mitch McConnell">
+                                <div class="media-body">
+                                    <a href="#" class="h5 font-weight-bold text-dark">
+                                        Pelosi Condemns Trump Firing Official Who Refuted Fraud Claims
+                                    </a>
+                                    <p class="text-secondary pt-2">
+                                        The president fired Christopher Krebs, director of the Cybersecurity and Infrastructure Security Agency, who rejected claims of election fraud.
+                                    </p>
+                                </div>
+                            </article>     
+
+
+
+                            <article class="col-12 container-fluid border-top py-3 px-0">
+                                <img class="float-left col-4 pl-0 mb-1" src="./assets/imgs/my-turn.jpg" alt="Mitch McConnell">
+                                <div class="media-body">
+                                    <a href="#" class="h5 font-weight-bold text-dark">
+                                        Pelosi Condemns Trump Firing Official Who Refuted Fraud Claims
+                                    </a>
+                                    <p class="text-secondary pt-2">
+                                        The president fired Christopher Krebs, director of the Cybersecurity and Infrastructure Security Agency, who rejected claims of election fraud.
+                                    </p>
+                                </div>
+                            </article>                                        
+                        </section>
+                </div>
+            
+    <!-- THE DEBATE -->
+
+            <div class="col-xl col-md-12 col-12 p-0">
+                <div class="col-12 position-sticky">
+                    <div class="h5 text-uppercase font-weight-bold text-black-50 sub-section-title py-2">
+                        the debate
+                    </div>
+                    <section class="border-top border-bottom">
+                        <article class="media py-2 py-lg-4 d-flex align-items-center">
+                            <img src="./assets/imgs/debate1.png" alt="Terry Schilling">
+                            <div class="media-body ml-3 p-md-0">
+                                <a class="text-dark h5 font-weight-bold" href="#">
+                                    Science Says Porn Is a Huge Problem. Lawmakers Must Stop Ignoring It
+                                </a>
+                                <p class="text-uppercase text-black-50 my-2 h6">
+                                    By <a class="font-weight-bold text-secondary" href="#">Terry Schilling</a>
+                                </p>
+                            </div>
+                        </article>
+                        <div>
+                            <div class="d-flex flex-column justify-content-center py-1 py-md-0">
+                                <h5 class="position-absolute align-self-center font-weight-bolder text-light bg-dark rounded-circle p-2">VS</h5>
+                                <div class="border-bottom mb-1"></div>
+                                <div class="border-top"></div>
+                            </div>
+                        </div>
+                        <article class="media py-2 py-lg-4 d-flex align-items-center">
+                            <div class="media-body mr-3 p-0">
+                                <a class="text-dark h5 font-weight-bold" href="#">
+                                    Banning Porn Is a Bad Idea. There Are Other Ways To Improve the Internet
+                                </a>
+                                <p class="text-uppercase text-black-50 my-2 h6">
+                                    By <a class="font-weight-bold text-secondary" href="#">Brandi Love</a>
+                                </p>
+                            </div>
+                            <img src="./assets/imgs/debate-2.png" alt="Brandi Love">
+                        </article>
+                    </section>
+
+        <!-- OPINION -->
+
+                    <section class="opinion">
+                    <div class="h5 text-uppercase font-weight-bold text-black-50 sub-section-title mt-4">
+                        opinion
+                    </div>
+                    <article class="media border-bottom d-flex align-items-center align-items-lg-start pt-lg-0 opinion">
+                        <img src="./assets/imgs/opinion.webp" alt="Keith D. Stanglin">
+                        <div class="media-body ml-2 mt-1">
+                            <a class="text-body text-decor-orange h5 font-weight-bold" href="#">
+                                Justice Alito is Right: Freedom of Speech and Religion Face Real Threats
+                            </a>
+                            <p class="text-uppercase text-black-50 h6 font-weight-bold py-2">
+                                By Keith D. Stanglin
+                            </p>
+                        </div>
+                    </article>
+                    <article class="media border-bottom d-flex align-items-center align-items-lg-start pt-lg-2 opinion">
+                        <img src="./assets/imgs/opinion.webp" alt="Keith D. Stanglin">
+                        <div class="media-body ml-2 mt-1">
+                            <a class="text-body text-decor-orange h5 font-weight-bold" href="#">
+                                Justice Alito is Right: Freedom of Speech and Religion Face Real Threats
+                            </a>
+                            <p class="text-uppercase text-black-50 h6 font-weight-bold py-2">
+                                By Keith D. Stanglin
+                            </p>
+                        </div>
+                    </article>
+                    <article class="media border-bottom d-flex align-items-center align-items-lg-start pt-lg-2 opinion">
+                        <img src="./assets/imgs/opinion.webp" alt="Keith D. Stanglin">
+                        <div class="media-body ml-2 mt-1">
+                            <a class="text-body text-decor-orange h5 font-weight-bold" href="#">
+                                Justice Alito is Right: Freedom of Speech and Religion Face Real Threats
+                            </a>
+                            <p class="text-uppercase text-black-50 h6 font-weight-bold py-2">
+                                By Keith D. Stanglin
+                            </p>
+                        </div>
+                    </article>
+                    <article class="media border-bottom d-flex align-items-center align-items-lg-start pt-lg-2 opinion">
+                        <img src="./assets/imgs/opinion.webp" alt="Keith D. Stanglin">
+                        <div class="media-body ml-2 mt-1">
+                            <a class="text-body text-decor-orange h5 font-weight-bold" href="#">
+                                Justice Alito is Right: Freedom of Speech and Religion Face Real Threats
+                            </a>
+                            <p class="text-uppercase text-black-50 h6 font-weight-bold py-2">
+                                By Keith D. Stanglin
+                            </p>
+                        </div>
+                    </article>
+                    <article class="media border-bottom d-flex align-items-center align-items-lg-start pt-lg-2 opinion">
+                        <img src="./assets/imgs/opinion.webp" alt="Keith D. Stanglin">
+                        <div class="media-body ml-2 mt-1">
+                            <a class="text-body text-decor-orange h5 font-weight-bold" href="#">
+                                Justice Alito is Right: Freedom of Speech and Religion Face Real Threats
+                            </a>
+                            <p class="text-uppercase text-black-50 h6 font-weight-bold py-2">
+                                By Keith D. Stanglin
+                            </p>
+                        </div>
+                    </article>
+                    <article class="media border-bottom d-flex align-items-center align-items-lg-start pt-lg-2 opinion">
+                        <img src="./assets/imgs/opinion.webp" alt="Keith D. Stanglin">
+                        <div class="media-body ml-2 mt-1">
+                            <a class="text-body text-decor-orange h5 font-weight-bold" href="#">
+                                Justice Alito is Right: Freedom of Speech and Religion Face Real Threats
+                            </a>
+                            <p class="text-uppercase text-black-50 h6 font-weight-bold py-2">
+                                By Keith D. Stanglin
+                            </p>
+                        </div>
+                    </article>
+                    <article class="media d-flex align-items-center align-items-lg-start pt-lg-2 opinion">
+                        <img src="./assets/imgs/opinion.webp" alt="Keith D. Stanglin">
+                        <div class="media-body ml-2 mt-1">
+                            <a class="text-body text-decor-orange h5 font-weight-bold" href="#">
+                                Justice Alito is Right: Freedom of Speech and Religion Face Real Threats
+                            </a>
+                            <p class="text-uppercase text-black-50 h6 font-weight-bold py-2">
+                                By Keith D. Stanglin
+                            </p>
+                        </div>
+                    </article>
+                    </section>
+
+        <!-- FREE SIGN UP -->
+                    <section class="jumbotron border bg-light rounded-0 px-4 pb-2 pt-4 m-3 col-lg-11 col-md-6 mx-md-auto">
+                        <div class="media d-flex align-items-center mb-3">
+                            <img class="mr-3" src="./assets/imgs/logo-N.png" alt="Newsweek" style="width: 40px;">
+                            <div class="media-body h5 text-uppercase text-dark font-weight-bold">
+                                Start your day with our top 5 articles                         
+                            </div>
+                        </div>
+                        <input type="email" name="email" id="email" placeholder="Email adress" class="col-sm-12 h5 border rounded-0 mb-2 py-2">
+                        <button type="button" class="btn btn-block text-white text-uppercase font-weight-bolder h4 bg-orange py-2">
+                            free sign up >
+                        </button>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DIVIDER -->
+
+        <div class="d-flex justify-content-center align-items-center border-bottom pb-2 pt-4 mb-0">
+            <img src="./assets/imgs/logo-N.png" alt="Newsweek" style="width: 30px;">
+            <h5 class="text-uppercase font-weight-bold text-dark ml-3 mt-2">
+                in the magazine
+            </h5>
+        </div>
+
+    <!-- IN THE MAGAZINE -->
+
+    <section class="row pre-footer">
+        <div class="container-fluid">
+            <div class="row d-flex flex-column flex-md-row">
+                <div class="col-md-3 p-3">
+                    <div class="position-relative d-flex in-the-mag">
+                        <img src="./assets/imgs/november-20.webp" alt="November 20" class="col-12 nov-20 p-0">
+                        <p class="category position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+                            NOVEMBER 20 ISSUE
+                        </p>
+                    </div>
+                    <button class="btn col-12 btn-text bg-light-gray font-weight-bold text-uppercase text-center h5 rounded-0 mt-2">see all features ></button>
+                </div>
+                <section class="d-flex flex-md-row col-md-9 px-0 mx-0 mt-5">
+                    <div class="row">
+                        <div class="col-md-4 d-flex flex-column in-the-mag py-3 px-1">
+                            <a href="#">
+                                <img class="col-12" src="./assets/imgs/downtime-culture.png" alt="Downtime">
+                            </a>
+                            <div class="col-12 mt-2">
+                                <div class="d-flex flex-row">
+                                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1">COVER</p> 
+                                <a href="#" class="text-decoration-none text-orange h5 font-weight-bold p-1 m-1">POLITICS</a>
+                                </div>
+                                <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+                                    Progressive Priorities at Risk as Biden Plans to Deal with McConnell
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column in-the-mag py-3 px-1">
+                            <a href="#">
+                                <img class="col-12" src="./assets/imgs/downtime-culture.png" alt="Downtime">
+                            </a>
+                            <div class="col-12 mt-2">
+                                <div class="d-flex flex-row">
+                                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1">COVER</p> 
+                                <a href="#" class="text-decoration-none text-orange h5 font-weight-bold p-1 m-1">POLITICS</a>
+                                </div>
+                                <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+                                    Progressive Priorities at Risk as Biden Plans to Deal with McConnell
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4 d-flex flex-column in-the-mag py-3 px-1">
+                            <a href="#">
+                                <img class="col-12" src="./assets/imgs/downtime-culture.png" alt="Downtime">
+                            </a>
+                            <div class="col-12 mt-2">
+                                <div class="d-flex flex-row">
+                                <p class="bg-orange text-light h5 font-weight-bold p-1 my-1">COVER</p> 
+                                <a href="#" class="text-decoration-none text-orange h5 font-weight-bold p-1 m-1">POLITICS</a>
+                                </div>
+                                <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+                                    Progressive Priorities at Risk as Biden Plans to Deal with McConnell
+                                </a>
+                            </div>
+                        </div>                        
+                    </div>
+                </section>                    
+            </div>
+            <div class="row py-md-3 d-none d-md-flex flex-md-row">
+                <div class="col-md-3 d-flex flex-column in-the-mag px-1">
+                    <a href="#">
+                        <img class="col-12" src="./assets/imgs/downtime-culture.png" alt="Downtime">
+                    </a>
+                    <div class="col-12 mt-2">
+                        <div class="d-flex flex-row">
+                        <p class="bg-orange text-light h5 font-weight-bold p-1 my-1">COVER</p> 
+                        <a href="#" class="text-decoration-none text-orange h5 font-weight-bold p-1 m-1">POLITICS</a>
+                        </div>
+                        <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+                            Progressive Priorities at Risk as Biden Plans to Deal with McConnell
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex flex-column in-the-mag px-1">
+                    <a href="#">
+                        <img class="col-12" src="./assets/imgs/downtime-culture.png" alt="Downtime">
+                    </a>
+                    <div class="col-12 mt-2">
+                        <div class="d-flex flex-row">
+                        <p class="bg-orange text-light h5 font-weight-bold p-1 my-1">COVER</p> 
+                        <a href="#" class="text-decoration-none text-orange h5 font-weight-bold p-1 m-1">POLITICS</a>
+                        </div>
+                        <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+                            Progressive Priorities at Risk as Biden Plans to Deal with McConnell
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex flex-column in-the-mag px-1">
+                    <a href="#">
+                        <img class="col-12" src="./assets/imgs/downtime-culture.png" alt="Downtime">
+                    </a>
+                    <div class="col-12 mt-2">
+                        <div class="d-flex flex-row">
+                        <p class="bg-orange text-light h5 font-weight-bold p-1 my-1">COVER</p> 
+                        <a href="#" class="text-decoration-none text-orange h5 font-weight-bold p-1 m-1">POLITICS</a>
+                        </div>
+                        <a href="#" class="link-title h5 font-weight-bold text-dark text-decor-orange">
+                            Progressive Priorities at Risk as Biden Plans to Deal with McConnell
+                        </a>
+                    </div>
+                </div>                
+            </div>           
+        </div>
+    </section>
+
+    <!-- DIVIDER -->
+
+        <div class="d-flex justify-content-center align-items-center border-bottom pb-2 pt-4 mb-3">
+            <img src="./assets/imgs/logo-N.png" alt="Newsweek" style="width: 30px;">
+            <h5 class="text-uppercase font-weight-bold text-dark ml-3 mt-2">
+                editor's pick
+            </h5>
+        </div>
+
+    <!-- EDITOR'S PICK -->
+
+    <section class="row container-fluid mb-5">
+        <div class="row">
+            <article class="col-lg-3 col-md-6 d-flex flex-column">
+                <div class="image position-relative d-flex">
+                    <img src="./assets/imgs/us.webp" alt="Biden">
+                    <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+                        U.S.
+                    </p>
+                </div>
+                <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2">
+                    Americans Want Trump to Work With Biden Team on COVID-19 Crisis: Poll
+                </a>
+                <p class="description text-secondary">
+                    President-elect Biden has started planning to move into the White House, despite President Trump's refusal to concede the election.
+                </p>
+            </article>
+            <article class="col-lg-3 col-md-6 d-flex flex-column">
+                <div class="image position-relative d-flex">
+                    <img src="./assets/imgs/us.webp" alt="Biden">
+                    <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+                        U.S.
+                    </p>
+                </div>
+                <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2">
+                    Americans Want Trump to Work With Biden Team on COVID-19 Crisis: Poll
+                </a>
+                <p class="description text-secondary">
+                    President-elect Biden has started planning to move into the White House, despite President Trump's refusal to concede the election.
+                </p>
+            </article>
+            <article class="col-lg-3 col-md-6 d-flex flex-column">
+                <div class="image position-relative d-flex">
+                    <img src="./assets/imgs/us.webp" alt="Biden">
+                    <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+                        U.S.
+                    </p>
+                </div>
+                <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2">
+                    Americans Want Trump to Work With Biden Team on COVID-19 Crisis: Poll
+                </a>
+                <p class="description text-secondary">
+                    President-elect Biden has started planning to move into the White House, despite President Trump's refusal to concede the election.
+                </p>
+            </article>
+            <article class="col-lg-3 col-md-6 d-flex flex-column">
+                <div class="image position-relative d-flex">
+                    <img src="./assets/imgs/us.webp" alt="Biden">
+                    <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+                        U.S.
+                    </p>
+                </div>
+                <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2">
+                    Americans Want Trump to Work With Biden Team on COVID-19 Crisis: Poll
+                </a>
+                <p class="description text-secondary">
+                    President-elect Biden has started planning to move into the White House, despite President Trump's refusal to concede the election.
+                </p>
+            </article>
+        </div>
+        <div class="row">
+            <article class="col-lg-3 col-md-6 d-flex flex-column">
+                <div class="image position-relative d-flex">
+                    <img src="./assets/imgs/us.webp" alt="Biden">
+                    <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+                        U.S.
+                    </p>
+                </div>
+                <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2">
+                    Americans Want Trump to Work With Biden Team on COVID-19 Crisis: Poll
+                </a>
+                <p class="description text-secondary">
+                    President-elect Biden has started planning to move into the White House, despite President Trump's refusal to concede the election.
+                </p>
+            </article>
+            <article class="col-lg-3 col-md-6 d-flex flex-column">
+                <div class="image position-relative d-flex">
+                    <img src="./assets/imgs/us.webp" alt="Biden">
+                    <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+                        U.S.
+                    </p>
+                </div>
+                <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2">
+                    Americans Want Trump to Work With Biden Team on COVID-19 Crisis: Poll
+                </a>
+                <p class="description text-secondary">
+                    President-elect Biden has started planning to move into the White House, despite President Trump's refusal to concede the election.
+                </p>
+            </article>
+            <article class="col-lg-3 col-md-6 d-flex flex-column">
+                <div class="image position-relative d-flex">
+                    <img src="./assets/imgs/us.webp" alt="Biden">
+                    <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+                        U.S.
+                    </p>
+                </div>
+                <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2">
+                    Americans Want Trump to Work With Biden Team on COVID-19 Crisis: Poll
+                </a>
+                <p class="description text-secondary">
+                    President-elect Biden has started planning to move into the White House, despite President Trump's refusal to concede the election.
+                </p>
+            </article>
+            <article class="col-lg-3 col-md-6 d-flex flex-column">
+                <div class="image position-relative d-flex">
+                    <img src="./assets/imgs/us.webp" alt="Biden">
+                    <p class="position-absolute bg-light text-orange font-weight-bold align-self-end categorie mb-0 px-3 py-2">
+                        U.S.
+                    </p>
+                </div>
+                <a href="#" class="sub-title h5 font-weight-bold text-dark text-decor-orange my-2 pt-2">
+                    Americans Want Trump to Work With Biden Team on COVID-19 Crisis: Poll
+                </a>
+                <p class="description text-secondary">
+                    President-elect Biden has started planning to move into the White House, despite President Trump's refusal to concede the election.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- BOTTOM ARTICLES -->
+
+    <section class="row border-top pt-4 col-12 mx-0 px-0 container-fluid">
+        <div class="title h4 pl-3 font-weight-bold text-orange">
+            U.S.
+        </div>
+        <div class="row d-flex flex-column flex-md-row container-fluid p-0">
+            <article class="col-12 col-md-4 bottom-art d-flex flex-column">
+                <img src="./assets/imgs/minks.webp" alt="Mink">
+                <p class="sub-title mt-3">
+                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
+                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
+                    </a>
+                </p>
+            </article>
+            <article class="col-12 col-md-4 bottom-art d-flex flex-column">
+                <img src="./assets/imgs/minks.webp" alt="Mink">
+                <p class="sub-title mt-3">
+                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
+                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
+                    </a>
+                </p>
+            </article>          
+            <section class="col-12 col-md-4 p-0">
+                <article class="media pb-2 pb-md-1">
+                    <img src="./assets/imgs/right-small.webp" alt="Bald Eagle" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Severed Feet of Bald Eagles Found
+                    </a>
+                </article>
+                <article class="media border-top py-2 pt-md-2">
+                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
+                    </a>
+                </article>
+                <article class="media border-top py-2 pt-md-2">
+                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
+                    </a>
+                </article>
+            </section>
+        </div>
+    </section>
+    
+    <section class="row border-top pt-4 col-12 mx-0 px-0 container-fluid">
+        <div class="title h4 pl-3 font-weight-bold text-orange">
+            U.S.
+        </div>
+        <div class="row d-flex flex-column flex-md-row container-fluid p-0">
+            <article class="col-12 col-md-4 bottom-art d-flex flex-column">
+                <img src="./assets/imgs/minks.webp" alt="Mink">
+                <p class="sub-title mt-3">
+                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
+                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
+                    </a>
+                </p>
+            </article>
+            <article class="col-12 col-md-4 bottom-art d-flex flex-column">
+                <img src="./assets/imgs/minks.webp" alt="Mink">
+                <p class="sub-title mt-3">
+                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
+                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
+                    </a>
+                </p>
+            </article>          
+            <section class="col-12 col-md-4 p-0">
+                <article class="media pb-2 pb-md-1">
+                    <img src="./assets/imgs/right-small.webp" alt="Bald Eagle" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Severed Feet of Bald Eagles Found
+                    </a>
+                </article>
+                <article class="media border-top py-2 pt-md-2">
+                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
+                    </a>
+                </article>
+                <article class="media border-top py-2 pt-md-2">
+                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
+                    </a>
+                </article>
+            </section>
+        </div>
+    </section>
+
+    <section class="row border-top pt-4 col-12 mx-0 px-0 container-fluid">
+        <div class="title h4 pl-3 font-weight-bold text-orange">
+            U.S.
+        </div>
+        <div class="row d-flex flex-column flex-md-row container-fluid p-0">
+            <article class="col-12 col-md-4 bottom-art d-flex flex-column">
+                <img src="./assets/imgs/minks.webp" alt="Mink">
+                <p class="sub-title mt-3">
+                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
+                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
+                    </a>
+                </p>
+            </article>
+            <article class="col-12 col-md-4 bottom-art d-flex flex-column">
+                <img src="./assets/imgs/minks.webp" alt="Mink">
+                <p class="sub-title mt-3">
+                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
+                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
+                    </a>
+                </p>
+            </article>          
+            <section class="col-12 col-md-4 p-0">
+                <article class="media pb-2 pb-md-1">
+                    <img src="./assets/imgs/right-small.webp" alt="Bald Eagle" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Severed Feet of Bald Eagles Found
+                    </a>
+                </article>
+                <article class="media border-top py-2 pt-md-2">
+                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
+                    </a>
+                </article>
+                <article class="media border-top py-2 pt-md-2">
+                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
+                    </a>
+                </article>
+            </section>
+        </div>
+    </section>
+    
+    <section class="row border-top pt-4 col-12 mx-0 px-0 container-fluid">
+        <div class="title h4 pl-3 font-weight-bold text-orange">
+            U.S.
+        </div>
+        <div class="row d-flex flex-column flex-md-row container-fluid p-0">
+            <article class="col-12 col-md-4 bottom-art d-flex flex-column">
+                <img src="./assets/imgs/minks.webp" alt="Mink">
+                <p class="sub-title mt-3">
+                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
+                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
+                    </a>
+                </p>
+            </article>
+            <article class="col-12 col-md-4 bottom-art d-flex flex-column">
+                <img src="./assets/imgs/minks.webp" alt="Mink">
+                <p class="sub-title mt-3">
+                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
+                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
+                    </a>
+                </p>
+            </article>          
+            <section class="col-12 col-md-4 p-0">
+                <article class="media pb-2 pb-md-1">
+                    <img src="./assets/imgs/right-small.webp" alt="Bald Eagle" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Severed Feet of Bald Eagles Found
+                    </a>
+                </article>
+                <article class="media border-top py-2 pt-md-2">
+                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
+                    </a>
+                </article>
+                <article class="media border-top py-2 pt-md-2">
+                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
+                    </a>
+                </article>
+            </section>
+        </div>
+    </section>
+
+    <section class="row border-top pt-4 col-12 mx-0 px-0 container-fluid">
+        <div class="title h4 pl-3 font-weight-bold text-orange">
+            U.S.
+        </div>
+        <div class="row d-flex flex-column flex-md-row container-fluid p-0">
+            <article class="col-12 col-md-4 bottom-art d-flex flex-column">
+                <img src="./assets/imgs/minks.webp" alt="Mink">
+                <p class="sub-title mt-3">
+                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
+                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
+                    </a>
+                </p>
+            </article>
+            <article class="col-12 col-md-4 bottom-art d-flex flex-column">
+                <img src="./assets/imgs/minks.webp" alt="Mink">
+                <p class="sub-title mt-3">
+                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
+                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
+                    </a>
+                </p>
+            </article>          
+            <section class="col-12 col-md-4 p-0">
+                <article class="media pb-2 pb-md-1">
+                    <img src="./assets/imgs/right-small.webp" alt="Bald Eagle" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Severed Feet of Bald Eagles Found
+                    </a>
+                </article>
+                <article class="media border-top py-2 pt-md-2">
+                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
+                    </a>
+                </article>
+                <article class="media border-top py-2 pt-md-2">
+                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
+                    </a>
+                </article>
+            </section>
+        </div>
+    </section>
+
+    <section class="row border-top pt-4 col-12 mx-0 px-0 container-fluid">
+        <div class="title h4 pl-3 font-weight-bold text-orange">
+            U.S.
+        </div>
+        <div class="row d-flex flex-column flex-md-row container-fluid p-0">
+            <article class="col-12 col-md-4 bottom-art d-flex flex-column">
+                <img src="./assets/imgs/minks.webp" alt="Mink">
+                <p class="sub-title mt-3">
+                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
+                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
+                    </a>
+                </p>
+            </article>
+            <article class="col-12 col-md-4 bottom-art d-flex flex-column">
+                <img src="./assets/imgs/minks.webp" alt="Mink">
+                <p class="sub-title mt-3">
+                    <a href="#" class="h5 font-weight-bold text-dark text-decor-orange">
+                    Campaigners Call for Fur Trade to End as Millions of Mink Culled
+                    </a>
+                </p>
+            </article>          
+            <section class="col-12 col-md-4 p-0">
+                <article class="media pb-2 pb-md-1">
+                    <img src="./assets/imgs/right-small.webp" alt="Bald Eagle" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Severed Feet of Bald Eagles Found
+                    </a>
+                </article>
+                <article class="media border-top py-2 pt-md-2">
+                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
+                    </a>
+                </article>
+                <article class="media border-top py-2 pt-md-2">
+                    <img src="./assets/imgs/right-square.webp" alt="Shark" class="m-0">
+                    <a href="#" class="pl-3 text-decor-orange h6 font-weight-bolder text-dark media-body">
+                        Woman Witnessed Shark Attacking Her Husband, Watched Ocean Fill With Blood
+                    </a>
+                </article>
+            </section>
+        </div>
+    </section>
+
+    <!-- SUBSCRIBE -->
+
+    <section class="row mb-5 bottom-section border-top pt-3">
+        <div class="col-lg-8 px-2 py-3 subscribe">
+            <h5 class="font-weight-bold text-orange">SUBSCRIBE</h5>
+            <div class="d-flex flex-md-row align-items-center flex-column jumbotron bg-light rounded-0 py-5 pr-4">
+                <div class="col-md-4 col-sm-12 position-relative imgs pl-2">
+                    <img src="./assets/imgs/november-06-11.jpg" alt="november-06-11" class="first">
+                    <img src="./assets/imgs/november-20.webp" alt="november-21" class="second position-relative float-right">
+                </div>
+                <div class="col-md-8 d-flex col-sm-12 flex-column">
+                    <div class="h3 font-weight-bold text-center text-md-left text-black">
+                        In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
+                    </div>
+                    <div class="description p text-center text-md-left">
+                        All Access + Weekly Delivery. <br/> Choose A Membership That's Perfect for You!
+                    </div>
+                    <button class="btn bg-orange text-light font-weight-bold subscribe-btn col-md-5 col-8 mx-auto">
+                        SUBSCRIBE >
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- NEWSLETTER -->
+
+        <div class="col-lg-4 newsletter container">
+            <h5 class="font-weight-bold pt-3 pl-md-2 ml-0 text-orange">NEWSLETTER</h5>
+            <div class="row border d-flex flex-column flex-md-row mx-0 ml-md-2 text-center text-lg-left">
+                <img src="./assets/imgs/newsletter.png" alt="news letters" class="col-md-6 px-0">
+                <div class="col-md-6 align-items-center">
+                    <h2 class="h5 font-weight-bold text-black mt-4 mb-3">The Starting 5</h2>
+                    <p class="newsletter-description">See why nearly a quarter of a million subscribers begin their day with the Starting 5.</p>
+                    <div class="container-fluid d-flex align-items-center flex-lg-column">
+                        <input type="text" placeholder="Email adress" class="col-lg-10 border col-6 py-0 py-lg-1 p rounded-0" style="height: 33px;">
+                        <button type="button" class="btn bg-orange text-light font-weight-bold col-6 col-lg-10 p rounded-0">FREE SIGNUP ></button>
+                    </div>
+                </div> 
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+        <section class="d-flex justify-content-between flex-column flex-md-row align-items-md-center border-bottom ml-2 pb-2">
+            <div class="d-flex justify-content-between flex-column flex-md-row">
+                <img src="./assets/imgs/logo.png" alt="Newsweek" style="width: 236px; height: 35px;">
+                <h6 class="pl-md-4 mt-3 text-black-50">
+                    © 2020 NEWSWEEK DIGITAL LLC
+                </h6>
+            </div>
+            <div class="d-flex align-items-end h4">
+                <i class="fab fa-facebook-square"></i>
+                <i class="ml-2 fab fa-twitter"></i>
+                <i class="ml-2 fab fa-instagram"></i>
+                <i class="ml-2 fab fa-tumblr"></i>
+                <i class="ml-2 fab fa-linkedin-in"></i>
+            </div>
+        </section>
+        <section class="ml-2 my-3 d-flex text-secondary">
+                <h6 class="nav-item font-weight-bold align-self-md-center py-0">
+                    Editions:
+                </h6>
+            <ul class="navbar-nav navbar-expand d-flex flex-wrap">            
+                <li class="nav-item">
+                    <a href="#" class="nav-link h6 border-right text-secondary py-0 px-3">U.S. Edition</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link h6 border-right text-secondary py-0 px-3">日本</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link h6 border-right text-secondary py-0 px-3">Pakistan</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link h6 border-right text-secondary py-0 px-3">Polska</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link h6 text-secondary py-0 px-3">România</a>
+                </li>
+            </ul>
+        </section>
+        <section class="ml-2 pb-3">
+            <ul class="navbar-nav navbar-expand d-flex flex-wrap">
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-secondary h6 py-0 px-2">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-secondary h6 py-0 px-2">Corrections</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-secondary h6 py-0 px-2">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-secondary h6 py-0 px-2">Editorial Guidelines</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-secondary h6 py-0 px-2">Advertise</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-secondary h6 py-0 px-2">Copyright</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-secondary h6 py-0 px-2">Terms & Conditions</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-secondary h6 py-0 px-2">Privacy Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-secondary h6 py-0 px-2">Cookie Policy</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-secondary h6 py-0 px-2">Terms of Sale</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link border-right text-secondary h6 py-0 px-2">Archive</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-secondary h6 border-right py-0 px-2">Announcements</a>
+                </li>
+            </ul>
+        </section>
+    </footer>
+    </div>
+
+    <!-- SCRIPTS -->
+
+    <script src="https://kit.fontawesome.com/0348c0adc9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

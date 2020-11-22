@@ -1,0 +1,147 @@
+html,
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main {
+  max-width: 1410px;
+  margin: 0 auto;
+  background-color: white !important;
+}
+
+h4,
+.h4,
+h5,
+.h5 { font-family: liberation-sans, sans-serif; }
+
+.bg-orange { background-color: rgb(247, 34, 16) !important; }
+
+.bg-light-gray { background-color: rgba(219, 218, 218, 0.849) !important; }
+
+.text-orange { color: rgb(247, 34, 16) !important; }
+
+.text-decor-orange { text-decoration-color: rgb(247, 34, 16) !important; }
+
+.border-bottom-1 { border-bottom: 15px solid rgb(199, 199, 199); }
+
+.image > img {
+  width: 100%;
+}
+
+header > nav > div > .subscribe {
+  border-radius: 20px;
+}
+
+.media > img {
+  width: 80px;
+  margin: 10px;
+}
+
+.turn .turn-elmt {
+  margin: 5px;
+}
+
+.turn img {
+  width: 100%;
+}
+
+.py-4 img,
+.opinion > img {
+  height: 60px;
+  width: 60px;
+}
+
+.imgs img {
+  width: 150px;
+}
+
+.imgs .first {
+  position: absolute;
+  top: -10px;
+  z-index: 0;
+}
+
+.imgs .second {
+  z-index: 2;
+}
+
+.subscribe-btn {
+  width: 30%;
+  margin-top: 20px;
+}
+
+.newsletter .btn {
+  width: 85%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .position-sticky {
+    position: sticky;
+    top: 60px !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body { max-width: 768px; }
+
+  .main-section > .tric > div {
+    height: 800px;
+    background-color: red;
+  }
+
+  header > .tobe-hiden {
+    display: none;
+  }
+
+  header > nav > .tobe-hiden {
+    display: none;
+  }
+
+  h6,
+  .h6 { font-size: 0.9rem !important; }
+
+  h5,
+  .h5 { font-size: 1rem !important; }
+
+  h4,
+  .h4 { font-size: 1.25rem !important; }
+
+  h3,
+  .h3 { font-size: 1.5rem !important; }
+
+  p,
+  .p { font-size: 0.8rem !important; }
+}
+
+/* ------------------ For the smallest screens -------------------- */
+
+@media screen and (max-width: 544px) {
+  body { width: 100%; }
+
+  .main { width: 100%; }
+
+  h6,
+  .h6 { font-size: 0.9rem !important; }
+
+  h5,
+  .h5 { font-size: 1rem !important; }
+
+  h4,
+  .h4 { font-size: 1.15rem !important; }
+
+  h3,
+  .h3 { font-size: 1.25rem !important; }
+
+  p,
+  .p { font-size: 0.8rem !important; }
+
+  header > nav > div > .login {
+    display: none;
+  }
+
+  nav > .navbar-brand > img {
+    height: 50px;
+  }
+}
